@@ -100,3 +100,43 @@ header nav a:hover {
 header span {
     padding-bottom: 0.5rem;
 }
+
+/*Banner styles*/
+
+.banner {
+    padding-top: 4rem;
+    background-color: hsl(321, 30%, 85%);
+    display: flex;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.banner-info {
+    padding-left: 1rem;
+    padding-right: 8.5rem;
+}
+
+.banner-info h1 {
+    font-size: 2.25rem;
+}
+
+.banner-info p {
+    font-size: 1.25rem;
+    padding: 2rem 2rem 2rem 0;
+}
+
+.start-here {
+    background-color: #ff69b4;
+    border-radius: 50px;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.start-here span a {
+    color: white;
+}
