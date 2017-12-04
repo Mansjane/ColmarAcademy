@@ -45,6 +45,10 @@ header .mobile {
     border-radius: 50%;
 }
 
+.info-image {
+    width: 35%;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -66,6 +70,10 @@ header {
     background-color: #F0A7D6;
     color: white;
     height: 4rem;
+}
+
+header img {
+    margin-right: 0.25rem;
 }
 
 header .content {
@@ -139,4 +147,178 @@ header span {
 
 .start-here span a {
     color: white;
+}
+
+.start-here span a:hover {
+    color: #579EF1;
+    transition: color 0.5s ease-out 0s;
+}
+
+/*Information styles*/
+
+.information {
+    display: flex;
+}
+
+.information-left {
+    border-right: 0.25px solid lightpink;
+}
+
+.information-left-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.information-left-content h2 {
+    font-size: 2rem;
+}
+
+.information-left-content p {
+    padding: 1.5rem 1.5rem 2.5rem 0;
+}
+
+.information-right {
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.info {
+    display: flex;
+}
+
+.info-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.info-text {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-text h2,
+.info-text span,
+.info-text a {
+    padding: 0.5rem;
+}
+
+.info-text h2 {
+    font-size: 1.5rem;
+}
+
+.orientation {
+    border-bottom: 0.25px solid lightpink;
+    border-top: 0.25px solid lightpink;
+}
+
+.campus {
+    border-top: 0.25px solid lightpink;
+    margin-top: 1px;
+}
+
+.guest-lecture {
+    background-color: hsl(321, 30%, 85%);
+}
+
+/*Courses styles*/
+
+.courses {
+    background-color: hsl(321, 30%, 85%);
+    padding: 0 4.5rem 4.5rem 4.5rem;
+}
+
+.courses-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.course {
+    width: 30%;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+.course-image {
+    width: 100%;
+}
+
+.course-image img {
+    max-width: 100%;
+}
+
+.courses h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.course-text h3,
+.course-text span,
+.course-text p {
+    padding: 0.5rem;
+}
+
+.course h3 {
+    font-size: 1.5rem;
+}
+
+.courses-mobile {
+    display: none;
+}
+
+/*Thesis styles*/
+
+.thesis video {
+    max-width: 100%;
+    height: auto;
+    background-color: hsl(321, 30%, 85%);
+}
+
+.thesis {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.thesis .information-left {
+    border: none;
+}
+
+.thesis .orientation {
+    border: none;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+.thesis-content {
+    display: flex;
+}
+
+.thesis .information-right {
+    padding-top: 2rem;
+}
+
+/*Footer styles*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+}
+
+.legal span a {
+    padding: 1rem;
+}
+
+.legal span a:hover {
+    color: #ff69b4;
+    transition: color 0.5s ease-out 0s;
 }
