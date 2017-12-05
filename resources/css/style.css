@@ -7,7 +7,9 @@ body {
     line-height: 1.2;
 }
 
-/*Generic styles*/
+/******************/
+/* Generic Styles */
+/******************/
 
 header .mobile {
     display: none;
@@ -53,6 +55,10 @@ header .mobile {
     font-weight: bold;
 }
 
+/**********************/
+/* Responsive Generic */
+/**********************/
+
 @media only screen and (max-width: 500px) {
 
     .rounded-border {
@@ -60,7 +66,9 @@ header .mobile {
     }
 }
 
-/*Header styles*/
+/*****************/
+/* Header Styles */
+/*****************/
 
 header {
     position: fixed;
@@ -109,7 +117,45 @@ header span {
     padding-bottom: 0.5rem;
 }
 
-/*Banner styles*/
+/*********************/
+/* Responsive Header */
+/*********************/
+
+@media only screen and (max-width: 500px) {
+
+    header .desktop {
+        display: none;
+    }
+
+    .content span {
+        display: none;
+    }
+
+    header .mobile {
+        display: block;
+        width: 100%;
+    }
+
+    header .content {
+        padding: 1rem 0;
+    }
+
+    header .mobile ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    header .mobile li {
+        padding: 0;
+    }
+
+}
+
+/*****************/
+/* Banner Styles */
+/*****************/
 
 .banner {
     padding-top: 4rem;
@@ -154,7 +200,47 @@ header span {
     transition: color 0.5s ease-out 0s;
 }
 
-/*Information styles*/
+/*********************/
+/* Responsive Banner */
+/*********************/
+
+@media only screen and (max-width: 500px) {
+
+    .large-img-padding {
+        padding: 0;
+    }
+
+    .large-img-container {
+        width: 100%;
+    }
+
+    .small-img-container {
+        width: 100%;
+    }
+
+    .banner-info {
+        padding: 2rem 3rem;
+    }
+
+    .banner-info h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .banner-info p {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+}
+
+/********************/
+/*Information Styles*/
+/********************/
 
 .information {
     display: flex;
@@ -205,6 +291,19 @@ header span {
     padding: 0.5rem;
 }
 
+.info-text a {
+    color: #ff69b4
+}
+
+.info-text a:hover {
+    background-color: #ff69b4;
+    color: white;
+    width: 5.25rem;
+    border: 1px solid white;
+    border-radius: 50px;
+    transition: background-color ease-out 0.5s, color ease-out 0.5s;
+}
+
 .info-text h2 {
     font-size: 1.5rem;
 }
@@ -223,7 +322,52 @@ header span {
     background-color: hsl(321, 30%, 85%);
 }
 
-/*Courses styles*/
+/**************************/
+/* Responsive Information */
+/**************************/
+
+@media only screen and (max-width: 500px) {
+
+    .information-left {
+        display: none;
+    }
+
+    .information-right {
+        width: 100%;
+        padding: 0 1.5rem 0 0;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 3rem;
+    }
+
+    .guest-lecture {
+        background: none;
+    }
+
+    .orientation,
+    .campus {
+        border: none;
+    }
+
+    .info-text a:hover {
+        background-color: white;
+        color: #579EF1;
+        width: auto;;
+        border: none;
+        border-radius: 0;
+        transition: color ease-out 0.5s;
+    }
+
+}
+
+/******************/
+/* Courses Styles */
+/******************/
 
 .courses {
     background-color: hsl(321, 30%, 85%);
@@ -248,6 +392,8 @@ header span {
 
 .course-image img {
     max-width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .courses h2 {
@@ -270,7 +416,46 @@ header span {
     display: none;
 }
 
-/*Thesis styles*/
+/**********************/
+/* Responsive Courses */
+/**********************/
+
+@media only screen and (max-width: 500px) {
+
+    .courses {
+        display: none;
+    }
+
+    .courses-mobile {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        text-align: left;
+    }
+
+    .courses-mobile h2 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 2rem 1rem 1rem 0;
+    }
+
+    .courses-mobile div {
+        margin: 0.5rem 0;
+        padding: 1rem;
+        border-radius: 50px;
+        background-color: hsl(321, 30%, 85%);
+        text-align: center;
+    }
+
+    .courses-mobile div span {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+}
+
+/*****************/
+/* Thesis Styles */
+/*****************/
 
 .thesis video {
     max-width: 100%;
@@ -306,7 +491,43 @@ header span {
     padding-top: 2rem;
 }
 
+/*********************/
+/* Responsive Thesis */
+/*********************/
+
+@media only screen and (max-width: 500px) {
+
+    .thesis .information-right {
+        display: none;
+    }
+
+    .thesis .information-left-content {
+        display: none;
+    }
+
+    .thesis .large-img-padding {
+        padding: 0;
+    }
+
+    .thesis .large-img-container {
+        width: 100%;
+    }
+
+    .thesis .information-left {
+        display: block;
+        width: 100%;
+        background: none;
+    }
+
+    .thesis .title {
+        font-size: 2rem;
+    }
+
+}
+
+/***************/
 /*Footer styles*/
+/***************/
 
 footer {
     display: flex;
@@ -316,9 +537,22 @@ footer {
 
 .legal span a {
     padding: 1rem;
+    color: #ff69b4;
+    font-weight: 400;
 }
 
 .legal span a:hover {
-    color: #ff69b4;
-    transition: color 0.5s ease-out 0s;
+    font-weight: 900;
+    transition: font-weight 2s ease-out 0s;
+}
+
+/*********************/
+/* Responsive Footer */
+/*********************/
+
+@media only screen and (max-width: 500px) {
+
+    footer .legal {
+        display: none;
+    }
 }
